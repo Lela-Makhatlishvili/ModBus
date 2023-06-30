@@ -1,0 +1,31 @@
+ პროგრამის გასაშვებად საჭირო ინსტალაციები:
+sudo apt-get install libgtk-3-dev
+
+pip install mysql-connector-python
+
+pip install matplotlib
+
+pip install PyGObject
+
+////////////////////////////////////////////////////////////////////////////
+პროგრამის როგორც desktop აპლიკაციის გაშვების ინსტრუქცია linux ubuntu-ში
+////////////////////////////////////////////////////////////////////////////
+
+touch ModBus.desktop
+
+///////////////////
+ModBus.desktop ფაილში იწერება შემდეგი ტექსტი:
+
+[Desktop Entry]
+Name=Modbus
+Exec=program.py
+Icon=logo.png
+Terminal=false
+Type=Application
+Categories=GTK;Application;
+
+/////////////////////////
+შენახვის შემდეგ ენიჭება გაშვების უფლება ტერმინალში
+chmod +x ModBus.desktop
+
+
